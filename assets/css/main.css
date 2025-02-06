@@ -648,7 +648,7 @@ section,
   }
 
   .home-image img {
-    max-width: 250px; /* Smaller for mobile */
+    max-width: 450px; /* Smaller for mobile */
   }
 }
 
