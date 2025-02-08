@@ -786,11 +786,27 @@
     color: #fff;
     transition: color 0.3s;
   }
+  .portfolio .portfolio-info .details-link_1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 26px;
+    line-height: 1.2;
+    color: #fff;
+    transition: color 0.3s;
+  }
+
   .portfolio .portfolio-info .preview-link { left: calc(50% - 40px); }
   .portfolio .portfolio-info .details-link {
     left: 50%;
     font-size: 34px;
   }
+  .portfolio .portfolio-info .details-link_1 {
+    left: 60%;
+    font-size: 34px;
+  }
+
+
   .portfolio:hover .portfolio-info { opacity: 1; }
   
   /* ========================================================================
