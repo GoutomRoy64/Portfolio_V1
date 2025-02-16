@@ -262,7 +262,7 @@
   }
   
   /* ========================================================================
-     Step 4: Global Footer & Preloader
+     Step 4: Global Footer 
      ======================================================================== */
   .footer {
     padding: 40px 0;
@@ -279,31 +279,7 @@
     text-align: center;
   }
   
-  /* Preloader */
-  #preloader {
-    position: fixed;
-    inset: 0;
-    z-index: 999999;
-    overflow: hidden;
-    background: var(--background-color);
-    transition: opacity 0.6s ease-out;
-  }
-  #preloader:before {
-    content: "";
-    position: fixed;
-    top: calc(50% - 30px);
-    left: calc(50% - 30px);
-    width: 60px;
-    height: 60px;
-    border: 6px solid var(--accent-color);
-    border-color: var(--accent-color) transparent var(--accent-color) transparent;
-    border-radius: 50%;
-    animation: animate-preloader 1.5s linear infinite;
-  }
-  @keyframes animate-preloader {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-  }
+
   
   /* ========================================================================
      Step 5: Scroll Top Button & Page Titles
