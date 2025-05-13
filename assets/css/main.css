@@ -465,42 +465,125 @@
     box-shadow: 0 4px 10px rgba(0, 255, 255, 0.5);
     animation: floatImage 3s ease-in-out infinite;
   }
-  
-  /* Floating Animation */
-  @keyframes floatImage {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+ /* Floating Animation - Smoother and more performant */
+@keyframes floatImage {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Home Image Styles - Base */
+.home-image img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.3);
+  animation: floatImage 4s ease-in-out infinite;
+  will-change: transform; /* Improves animation performance */
+  aspect-ratio: 1/1; /* Maintains square ratio by default */
+}
+
+/* Tablet View (768px - 1024px) */
+@media (max-width: 1024px) {
+  .home, .home .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
   }
   
-  /* Mobile Responsive Adjustments */
-  @media (max-width: 1024px) {
-    .home, .home .container {
-      flex-direction: column;
-      text-align: center;
-    }
-    
-    .home-text { 
-      text-align: center; 
-      margin-bottom: 20px; 
-    }
+  .home-text { 
+    order: 2; /* Moves text below image */
+    margin-bottom: 0;
+    padding-top: 30px;
   }
   
-  @media (max-width: 768px) {
-    .home h2 { 
-      font-size: 32px; 
+  .home-image {
+    order: 1;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .home-image img {
+    animation-duration: 5s; /* Slower animation on tablets */
+  }
+}
+
+/* Mobile View (up to 767px) */
+@media (max-width: 767px) {
+  .home {
+    min-height: 100vh;
+    padding: 20px 15px;
+    justify-content: flex-start;
+    padding-top: 80px;
+  }
+  
+  .home .container {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .home-text {
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  .home-text h2 {
+    font-size: 28px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+  }
+  
+  .home-text p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .home-image {
+    width: 100%;
+    max-width: 100vw;
+    margin: 0 -15px; /* Bleed to edges */
+    padding-top: 20px;
+  }
+  
+  .home-image img {
+    width: 100vw;
+    max-width: 100vw;
+    height: auto;
+    border-radius: 0;
+    aspect-ratio: 4/5; /* Better mobile aspect ratio */
+    object-position: center top;
+    box-shadow: none;
+    animation: none; /* Remove animation on small devices */
+  }
+  
+  /* Special landscape mode adjustments */
+  @media (max-height: 500px) and (orientation: landscape) {
+    .home {
+      min-height: 150vh;
     }
-    
-    .home p { 
-      font-size: 18px; 
-    }
-    
-    /* Ensure the image always fills the container on mobile */
     .home-image img {
-      width: 100%;
-      height: auto;
-      max-width: none; /* Remove any max-width constraints */
+      aspect-ratio: 16/9;
+      max-height: 60vh;
     }
   }
+}
+
+/* Very Small Devices (under 400px) */
+@media (max-width: 400px) {
+  .home-text h2 {
+    font-size: 24px;
+  }
+  
+  .home-text p {
+    font-size: 15px;
+  }
+  
+  .home-image img {
+    aspect-ratio: 3/4;
+  }
+}
   
   /* ========================================================================
      Step 8: About Section
@@ -830,6 +913,7 @@
     background-color: #0a192f;
     color: #ffffff;
   }
+
   #contact .section-title h2 {
     text-align: center;
     font-size: 36px;
@@ -846,11 +930,13 @@
     background-color: #112240;
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
     border-radius: 10px;
+    background: #0a192f;
   }
   .contact .info-item {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    
   }
   .contact .info-item i {
     width: 50px;
@@ -860,18 +946,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(100, 255, 218, 0.1);
+   
     border-radius: 50px;
-    transition: background 0.3s, box-shadow 0.3s;
+    
   }
   .contact .info-item:hover i {
-    background: #64ffda;
+    background: #0a192f;
     box-shadow: 0 0 10px #64ffda;
     color: #ffffff;
   }
   .contact .php-email-form {
     padding: 30px;
-    background-color: #112240;
+    background: #0a192f;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
     border-radius: 10px;
   }

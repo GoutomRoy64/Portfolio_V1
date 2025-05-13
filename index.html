@@ -5,8 +5,6 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Goutom Roy</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
 
 
 <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
@@ -14,16 +12,14 @@
 <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
 <link rel="manifest" href="assets/img/site.webmanifest">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;600&family=Raleway:wght@300;400;600&display=swap" media="print" onload="this.onload=null;this.removeAttribute('media');">
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;600&family=Raleway:wght@300;400;600&display=swap">
-  </noscript>
-  
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
+<!-- Preconnect to Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Load only the font weights you actually use -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;600&family=Raleway:wght@300;400;600&display=swap" media="print" onload="this.media='all'">
+
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -44,7 +40,7 @@
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="profile-img">
-      <img src="assets/img/My_img.jpg" alt="" class="img-fluid rounded-circle">
+      <img src="assets/img/My_img.webp" alt="" class="img-fluid rounded-circle">
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
@@ -87,7 +83,7 @@
 
     <!-- Image on the Right -->
     <div class="home-image" data-aos="fade-in">
-      <img src="assets/img/home_image.JPG" alt="Goutom Roy">
+      <img src="assets/img/home_image.webp" alt="Goutom Roy">
     </div>
 
   </div>
@@ -113,7 +109,7 @@
     <div class="row gy-4 justify-content-center">
       <!-- Image Section -->
       <div class="col-lg-4">
-        <img src="assets/img/My_img.jpg" class="img-fluid about-img" alt="Goutom Roy">
+        <img src="assets/img/My_img.webp" class="img-fluid about-img" alt="Goutom Roy">
       </div>
       
       <!-- Text Section -->
@@ -272,18 +268,19 @@
   
           <h3 class="skill-title">📊 GitHub Stats</h3>
           <div class="github-stats">
-              <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=GoutomRoy64&cache_bust=timestamp&theme=radical&border=false&include_all_commits=true&count_private=true&layout=compact" alt="Top Languages">
+              <img loading="lazy" data-src="https://github-readme-stats.vercel.app/api/top-langs/?username=GoutomRoy64&cache_bust=timestamp&theme=radical&border=false&include_all_commits=true&count_private=true&layout=compact" alt="Top Languages">
   
-              <img loading="lazy"  src="https://github-readme-stats.vercel.app/api?username=GoutomRoy64&theme=radical&hide_border=false&include_all_commits=false&count_private=false" alt="GitHub Stats">
+              <img loading="lazy" data-src="https://github-readme-stats.vercel.app/api?username=GoutomRoy64&theme=radical&hide_border=false&include_all_commits=false&count_private=false" alt="GitHub Stats">
           
-              <img src="https://github-readme-streak-stats.herokuapp.com/?user=GoutomRoy64&cache_bust=timestamp&theme=radical&hide_border=false" alt="GitHub Streak">
+              <img loading="lazy" data-src="https://github-readme-streak-stats.herokuapp.com/?user=GoutomRoy64&cache_bust=timestamp&theme=radical&hide_border=false" alt="GitHub Streak">
+
               <br/>
              
           </div>
   
           <h3 class="skill-title">🏆 GitHub Trophies</h3>
           <div class="github-trophies">
-              <img src="https://github-profile-trophy.vercel.app/?username=GoutomRoy64&cache_bust=timestamp&theme=radical&no-frame=false&no-bg=true&margin-w=4" alt="GitHub Trophies" />
+              <img loading="lazy" data-src="https://github-profile-trophy.vercel.app/?username=GoutomRoy64&cache_bust=timestamp&theme=radical&no-frame=false&no-bg=true&margin-w=4" alt="GitHub Trophies">
           </div>
       </div>
 
@@ -324,11 +321,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
-                <img src="assets/img/app/tic-tac-toe.jpg" class="img-fluid" alt="">
+                <img src="assets/img/app/tic-tac-toe.webp" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>App 1</h4>
                   <p>Tic-Tac-Toe</p>
-                  <a href="assets/img/app/tic-tac-toe.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/app/tic-tac-toe.webp" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://www.amazon.com/gp/product/B0DWKJZZRW" title="Link One" class="details-link"><i class="bi bi-link-45deg"></i></a>
                   <a href="https://github.com/GoutomRoy64/Tic-Tac-Toe/releases"                       title="Link Two" class="details-link_1"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -339,11 +336,11 @@
 
              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
-                <img src="assets/img/group_project/gp1.png" class="img-fluid" alt="">
+                <img src="assets/img/group_project/gp1.webp" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Group Project_1</h4>
                   <p>Demand and Supply analysis for Agricultural Products</p>
-                  <a href="assets/img/group_project/gp1.png" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/group_project/gp1.webp" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://agri.wuaze.com" title="Link One" class="details-link"><i class="bi bi-link-45deg"></i></a>
                   <a href="https://github.com/soumicshahriar/agriculture_project"                       title="Link Two" class="details-link_1"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -397,29 +394,31 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
-                <img src="assets/img/group_project/5_star_hotel.png" class="img-fluid" alt="">
+                <img src="assets/img/group_project/5_star_hotel.webp" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Group Project_1</h4>
+                  <h4>Group Project_2</h4>
                   <p>5 Star Hotel Project</p>
-                  <a href="assets/img/group_project/5_star_hotel.png" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/group_project/5_star_hotel.webp" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://github.com/GoutomRoy64/Group-34--5-Star-Hotel--Project-Final" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div>
             
             <!-- End Portfolio Item -->
-<!-- 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/group_project/Land_System.webp" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Branding 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Group Project_3</h4>
+                  <p>Securing-Land-Transactions-System</p>
+                  <a href="assets/img/group_project/Land_System.webp" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://blis.up.railway.app" title="Link One" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="https://github.com/GoutomRoy64/Securing-Land-Transactions-System"                       title="Link Two" class="details-link_1"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div> -->
+            </div>
+
             
             <!-- End Portfolio Item -->
 <!-- 
@@ -451,17 +450,7 @@
             
             <!-- End Portfolio Item -->
 
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> -->
+
             
             <!-- End Portfolio Item -->
 
@@ -603,27 +592,24 @@
 
   
 
-
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
-   <!-- Preloader -->
+  <!-- Preloader -->
+  <div id="preloader"></div>
   
-   <div id="preloader"></div>
-   
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
- 
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <!-- Deferred Script Loading -->
+  <script defer src="assets/vendor/aos/aos.js"></script>
+  <script defer src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script defer src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script defer src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script defer src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script defer src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script defer src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  
+  <!-- Main JS File - Loaded last -->
+  <script defer src="assets/js/main.js"></script>
 </body>
-
 </html>
